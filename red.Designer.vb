@@ -69,7 +69,7 @@ Partial Class red
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(362, 282)
+        Button1.Location = New Point(383, 252)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 71)
         Button1.TabIndex = 3
