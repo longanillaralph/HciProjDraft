@@ -69,7 +69,7 @@ Partial Class red
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(496, 115)
+        Button1.Location = New Point(362, 282)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 71)
         Button1.TabIndex = 3
@@ -179,6 +179,10 @@ Partial Class red
         Panel1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
+    End Sub
+
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
