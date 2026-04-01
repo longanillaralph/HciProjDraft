@@ -7,5 +7,7 @@
         junel = "blue"
 
         junel = "yellow"
+
+        junel = "green"
     End Sub
 End Class

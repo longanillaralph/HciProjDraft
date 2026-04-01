@@ -41,9 +41,10 @@ Partial Class red
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Location = New Point(36, 42)
+        PictureBox1.Location = New Point(41, 56)
+        PictureBox1.Margin = New Padding(3, 4, 3, 4)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(235, 194)
+        PictureBox1.Size = New Size(269, 259)
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
@@ -51,9 +52,9 @@ Partial Class red
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 20F)
-        Label1.Location = New Point(303, 115)
+        Label1.Location = New Point(346, 153)
         Label1.Name = "Label1"
-        Label1.Size = New Size(98, 37)
+        Label1.Size = New Size(122, 46)
         Label1.TabIndex = 1
         Label1.Text = "NAME:"
         ' 
@@ -61,17 +62,18 @@ Partial Class red
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 20F)
-        Label2.Location = New Point(312, 178)
+        Label2.Location = New Point(357, 237)
         Label2.Name = "Label2"
-        Label2.Size = New Size(72, 37)
+        Label2.Size = New Size(88, 46)
         Label2.TabIndex = 2
         Label2.Text = "AGE:"
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(383, 252)
+        Button1.Location = New Point(948, 753)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 71)
+        Button1.Size = New Size(86, 95)
         Button1.TabIndex = 3
         Button1.Text = "CHANGE NAME BUTTON"
         Button1.UseVisualStyleBackColor = True
@@ -80,9 +82,9 @@ Partial Class red
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 20F)
-        Label3.Location = New Point(52, 262)
+        Label3.Location = New Point(59, 349)
         Label3.Name = "Label3"
-        Label3.Size = New Size(148, 37)
+        Label3.Size = New Size(187, 46)
         Label3.TabIndex = 4
         Label3.Text = "LOCATION:"
         ' 
@@ -90,9 +92,9 @@ Partial Class red
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 20F)
-        Label5.Location = New Point(52, 434)
+        Label5.Location = New Point(59, 579)
         Label5.Name = "Label5"
-        Label5.Size = New Size(241, 37)
+        Label5.Size = New Size(305, 46)
         Label5.TabIndex = 6
         Label5.Text = "CONTACT DETAILS:"
         ' 
@@ -100,9 +102,9 @@ Partial Class red
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 20F)
-        Label6.Location = New Point(52, 372)
+        Label6.Location = New Point(59, 496)
         Label6.Name = "Label6"
-        Label6.Size = New Size(116, 37)
+        Label6.Size = New Size(144, 46)
         Label6.TabIndex = 7
         Label6.Text = "COURSE"
         ' 
@@ -110,9 +112,9 @@ Partial Class red
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 20F)
-        Label7.Location = New Point(52, 316)
+        Label7.Location = New Point(59, 421)
         Label7.Name = "Label7"
-        Label7.Size = New Size(163, 37)
+        Label7.Size = New Size(201, 46)
         Label7.TabIndex = 8
         Label7.Text = "YEAR LEVEL:"
         ' 
@@ -120,17 +122,18 @@ Partial Class red
         ' 
         Panel1.BorderStyle = BorderStyle.Fixed3D
         Panel1.Controls.Add(Label4)
-        Panel1.Location = New Point(610, 262)
+        Panel1.Location = New Point(697, 349)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(295, 220)
+        Panel1.Size = New Size(337, 292)
         Panel1.TabIndex = 9
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(20, 27)
+        Label4.Location = New Point(23, 36)
         Label4.Name = "Label4"
-        Label4.Size = New Size(191, 15)
+        Label4.Size = New Size(236, 20)
         Label4.TabIndex = 0
         Label4.Text = "ABOUT YOURSELF (DESCRIPTION):"
         ' 
@@ -138,9 +141,9 @@ Partial Class red
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI", 20F)
-        Label8.Location = New Point(70, 499)
+        Label8.Location = New Point(80, 665)
         Label8.Name = "Label8"
-        Label8.Size = New Size(223, 37)
+        Label8.Size = New Size(279, 46)
         Label8.TabIndex = 10
         Label8.Text = "PREFFERED TIME:"
         ' 
@@ -148,18 +151,18 @@ Partial Class red
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 20F)
-        Label9.Location = New Point(303, 52)
+        Label9.Location = New Point(346, 69)
         Label9.Name = "Label9"
-        Label9.Size = New Size(119, 37)
+        Label9.Size = New Size(147, 46)
         Label9.TabIndex = 11
         Label9.Text = "USER ID:"
         ' 
         ' red
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Red
-        ClientSize = New Size(951, 664)
+        ClientSize = New Size(1087, 885)
         Controls.Add(Label9)
         Controls.Add(Label8)
         Controls.Add(Panel1)
@@ -172,6 +175,7 @@ Partial Class red
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 4, 3, 4)
         Name = "red"
         Text = "PROFILE TAB"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
