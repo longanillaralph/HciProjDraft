@@ -78,6 +78,7 @@ Partial Class Form1
         ' 
         ' LOGO
         ' 
+        LOGO.BorderStyle = BorderStyle.Fixed3D
         LOGO.Location = New Point(25, 16)
         LOGO.Name = "LOGO"
         LOGO.Size = New Size(100, 90)
