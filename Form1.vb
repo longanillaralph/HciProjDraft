@@ -32,10 +32,18 @@ Public Class Form1
         dbcon.ConnectionString = "Provider=Microssoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\DATABASE\db.accdb"
 
         Try
-              dbcon.ConnectionString = "Provider=Microssoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\DATABASE\db.accdb"
+            dbcon.ConnectionString = "Provider=Microssoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\DATABASE\db.accdb"
             MsgBox("Connection Successfull")
         Catch ex As Exception
             MsgBox("Connection error")
         End Try
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        changeform(Notification)
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        changeform(Settings)
     End Sub
 End Class
