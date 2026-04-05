@@ -31,6 +31,7 @@ Partial Class Form1
         Button5 = New Button()
         Button6 = New Button()
         Panel2 = New Panel()
+        SqlDataAdapter1 = New Microsoft.Data.SqlClient.SqlDataAdapter()
         CType(LOGO, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         SuspendLayout()
@@ -152,5 +153,6 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents SqlDataAdapter1 As Microsoft.Data.SqlClient.SqlDataAdapter
 
 End Class
