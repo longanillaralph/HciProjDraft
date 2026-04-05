@@ -29,10 +29,9 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dbcon = New OleDbConnection
 
-        dbcon.ConnectionString = "Provider=Microssoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\DATABASE\db.accdb"
-
+        Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\DB.accdb;")
         Try
-            dbcon.ConnectionString = "Provider=Microssoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\DATABASE\db.accdb"
+            dbcon.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\DB.accdb;"
             MsgBox("Connection Successfull")
         Catch ex As Exception
             MsgBox("Connection error")
