@@ -28,6 +28,7 @@ Partial Class Notification
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ActiveCaptionText
         ClientSize = New Size(935, 625)
         Name = "Notification"
         Text = "Notification"

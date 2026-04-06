@@ -28,6 +28,7 @@ Partial Class Settings
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ActiveCaption
         ClientSize = New Size(935, 625)
         Name = "Settings"
         Text = "Settings"
