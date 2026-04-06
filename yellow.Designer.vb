@@ -23,7 +23,9 @@ Partial Class yellow
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         SqlCommand1 = New Microsoft.Data.SqlClient.SqlCommand()
-        FlpFriends = New FlowLayoutPanel()
+        Label1 = New Label()
+        DgvFriends = New DataGridView()
+        CType(DgvFriends, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' SqlCommand1
@@ -31,14 +33,22 @@ Partial Class yellow
         SqlCommand1.CommandTimeout = 30
         SqlCommand1.EnableOptimizedParameterBinding = False
         ' 
-        ' FlpFriends
+        ' Label1
         ' 
-        FlpFriends.AutoScroll = True
-        FlpFriends.Dock = DockStyle.Fill
-        FlpFriends.Location = New Point(0, 0)
-        FlpFriends.Name = "FlpFriends"
-        FlpFriends.Size = New Size(951, 664)
-        FlpFriends.TabIndex = 2
+        Label1.AutoSize = True
+        Label1.Location = New Point(416, 55)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(77, 15)
+        Label1.TabIndex = 0
+        Label1.Text = "FRIENDS LIST"
+        ' 
+        ' DgvFriends
+        ' 
+        DgvFriends.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DgvFriends.Location = New Point(12, 98)
+        DgvFriends.Name = "DgvFriends"
+        DgvFriends.Size = New Size(910, 529)
+        DgvFriends.TabIndex = 7
         ' 
         ' yellow
         ' 
@@ -46,12 +56,16 @@ Partial Class yellow
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Yellow
         ClientSize = New Size(951, 664)
-        Controls.Add(FlpFriends)
+        Controls.Add(DgvFriends)
+        Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.None
         Name = "yellow"
         Text = "HISTORY"
+        CType(DgvFriends, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
     Friend WithEvents SqlCommand1 As Microsoft.Data.SqlClient.SqlCommand
-    Friend WithEvents FlpFriends As FlowLayoutPanel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents DgvFriends As DataGridView
 End Class
