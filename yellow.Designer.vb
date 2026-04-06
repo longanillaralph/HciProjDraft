@@ -22,7 +22,23 @@ Partial Class yellow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        SqlCommand1 = New Microsoft.Data.SqlClient.SqlCommand()
+        FlpFriends = New FlowLayoutPanel()
         SuspendLayout()
+        ' 
+        ' SqlCommand1
+        ' 
+        SqlCommand1.CommandTimeout = 30
+        SqlCommand1.EnableOptimizedParameterBinding = False
+        ' 
+        ' FlpFriends
+        ' 
+        FlpFriends.AutoScroll = True
+        FlpFriends.Dock = DockStyle.Fill
+        FlpFriends.Location = New Point(0, 0)
+        FlpFriends.Name = "FlpFriends"
+        FlpFriends.Size = New Size(951, 664)
+        FlpFriends.TabIndex = 2
         ' 
         ' yellow
         ' 
@@ -30,9 +46,12 @@ Partial Class yellow
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Yellow
         ClientSize = New Size(951, 664)
+        Controls.Add(FlpFriends)
         FormBorderStyle = FormBorderStyle.None
         Name = "yellow"
         Text = "HISTORY"
         ResumeLayout(False)
     End Sub
+    Friend WithEvents SqlCommand1 As Microsoft.Data.SqlClient.SqlCommand
+    Friend WithEvents FlpFriends As FlowLayoutPanel
 End Class
